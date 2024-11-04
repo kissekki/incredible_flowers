@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Паспорт РФ</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            text-align: center;
+        }
+        header, nav, footer {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #4a0cf4;
+        }
+        nav a.active {
+            font-weight: bold;
+        }
+        .passport-container {
+            position: relative;
+            display: inline-block;
+        }
+        .passport-container img {
+            width: 600px;
+            height: auto;
+        }
+        .text {
+            position: absolute;
+            color: Black;
+            font-size: 1.2em;
+        }
+        #issued {
+            top: 90px;
+            left: 170px;
+        }
+        #surname {
+            top: 468px;
+            left: 350px;
+        }
+        #name {
+            top: 530px;
+            left: 340px;
+        }
+        #father {
+            top: 565px;
+            left: 325px;
+        }
+        #gender {
+            top: 596px;
+            left: 230px;
+        }
+        #date {
+            top: 596px;
+            left: 345px;
+        }
+        #birthplace {
+            top: 630px;
+            left: 340px;
+        }
+        #photo {
+            position: absolute;
+            top: 524px;
+            left: 25px;
+            width: 168px;
+            height: auto;
+        }
+        .button-container {
+            margin-top: 20px;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #4a0cf4;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Изменяем кириллицу на латиницу по клику</h1>
+    <nav>
+        <a href="index.html">Главная</a>
+        <a href="albums.html">Букеты</a>
+        <a href="genres.html">Цветы</a>
+        <a href="task.html">Задача</a>
+        <a href="passport.html" class="active">Паспорт</a>
+        <a href="contacts.html">Предложить букет</a>
+        <a href="team_contact.html">Связаться с командой</a>
+        <a href="https://t.me/vietochka" target="_blank">Связаться с автором</a>
+    </nav>
+</header>
+
+<main>
+    <div class="passport-container">
+        <img src="images/passport.JPG" alt="Паспорт РФ">
+
+        <img id="photo" src="images/Sveta.png" alt="Светлана Денисовна" title="Светлана Денисовна">
+
+        <div class="text" id="issued">ГУ МВД ПО Г. МОСКВЕ</div>
+        <div class="text" id="surname">Ноздрачева</div>
+        <div class="text" id="name">Светлана</div>
+        <div class="text" id="father">Денисовна</div>
+        <div class="text" id="gender">Жен</div>
+        <div class="text" id="date">2004</div>
+        <div class="text" id="birthplace">Москва</div>
+    </div>
+
+    <div class="button-container">
+        <button id="translateButton">Изменить язык</button>
+    </div>
+</main>
+
+<footer>
+    <p>&copy; 2024 Incredible Flowers</p>
+</footer>
+
+<script>
+    document.getElementById('translateButton').addEventListener('click', function() {
+        const issuedText = document.getElementById('issued');
+        const surnameText = document.getElementById('surname');
+        const nameText = document.getElementById('name');
+        const patronymicText = document.getElementById('father');
+        const genderText = document.getElementById('gender');
+        const birthplaceText = document.getElementById('birthplace');
+
+        if (issuedText.innerText === 'ГУ МВД ПО Г. МОСКВЕ') {
+            issuedText.innerText = 'MOSCOW GU MVD';
+            surnameText.innerText = 'Nozdracheva';
+            nameText.innerText = 'Svetlana';
+            patronymicText.innerText = 'Denisovna';
+            genderText.innerText = 'Female';
+            birthplaceText.innerText = 'Moscow';
+        } else {
+            issuedText.innerText = 'ГУ МВД ПО Г. МОСКВЕ';
+            surnameText.innerText = 'Ноздрачева';
+            nameText.innerText = 'Светлана';
+            patronymicText.innerText = 'Денисовна';
+            genderText.innerText = 'Жен';
+            birthplaceText.innerText = 'Москва';
+        }
+    });
+</script>
+
+</body>
+</html>

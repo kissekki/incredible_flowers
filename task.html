@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Определить, является ли число положительным, отрицательным, либо нулем</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('images/background.jpg');
+            backdrop-filter: blur(8px);
+            background-size: cover;
+            background-position: center;
+            color: #6e48d6;
+        }
+        header, nav, footer {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #4a0cf4;
+        }
+        nav a.active {
+            font-weight: bold;
+        }
+        .form-container {
+            margin: 0 auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            width: 50%;
+        }
+        label, input, button {
+            display: block;
+            margin-bottom: 10px;
+        }
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #4a0cf4;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1.2em;
+            margin-right: 10px;
+        }
+        .result {
+            font-size: 1.2em;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Задача</h1>
+    <nav>
+        <a href="index.html">Главная</a>
+        <a href="albums.html">Букеты</a>
+        <a href="genres.html">Цветы</a>
+        <a href="javascript.html"class="active">Задача</a>
+        <a href="passport.html">Паспорт</a>
+        <a href="contacts.html">Предложить букет</a>
+        <a href="team_contact.html">Связаться с командой</a>
+        <a href="https://t.me/vietochka" target="_blank">Связаться с автором</a>
+    </nav>
+</header>
+
+<main>
+    <section class="form-container">
+        <h2>Прповерка на положительность, отрицательность, равенство нулю</h2>
+        <form id="calculationForm">
+
+            <label for="xValue">Введите значение X:</label>
+            <input type="text" id="xValue" name="xValue" required><br>
+
+            <button type="button" id="calculateButton">Проверить</button>
+            <button type="button" id="sendButton">Отправить</button>
+            <button type="button" id="clearButton">Очистить</button>
+        </form>
+
+        <div class="result" id="result">Результат: </div>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2024  Incredible Flowers</p>
+</footer>
+
+<script>
+    function calculate() {
+        let x = parseFloat(document.getElementById('xValue').value);
+        let res = '';
+        if (x === 0) {
+            alert("X = 0");
+            res = 'X равен нулю!';
+            //return;
+        }
+        else if (x > 0) {
+            alert("X - положительное число!");
+            res = 'X - положительное число!';
+            //return;
+        }
+        else if (x < 0) {
+            res = 'X - отрицательное число!';
+            alert(res);
+            //return;
+        }
+        else if (isNaN(x)) {
+            alert("Ошибка: Введите корректное вещественное число X!");
+            //return;
+        }
+
+        document.getElementById('result').innerText = `Результат: ${res}`;
+    }
+
+    function send() {
+        let x = parseFloat(document.getElementById('xValue').value);
+
+        if (isNaN(x)) {
+            alert("Ошибка: Введите корректное вещественное число X!");
+            return;
+        }
+
+        let query = `https://www.bing.com/search?q=Задача: X=${x} положительно, отрицательно, либо нуль. Результат: ${res}`;
+        window.open(query, '_blank');
+    }
+
+    function clearFields() {
+        document.getElementById('xValue').value = '';
+        document.getElementById('result').innerText = 'Результат: ';
+    }
+
+    document.getElementById('calculateButton').addEventListener('click', calculate);
+    document.getElementById('sendButton').addEventListener('click', send);
+    document.getElementById('clearButton').addEventListener('click', clearFields);
+</script>
+
+</body>
+</html>
