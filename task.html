@@ -64,19 +64,18 @@
     <h1>Задача</h1>
     <nav>
         <a href="index.html">Главная</a>
-        <a href="albums.html">Букеты</a>
-        <a href="genres.html">Цветы</a>
+        <a href="index.html#bouquets">Букеты</a>
+        <a href="index.html#flowers">Цветы</a>
         <a href="javascript.html"class="active">Задача</a>
         <a href="passport.html">Паспорт</a>
-        <a href="contacts.html">Предложить букет</a>
-        <a href="team_contact.html">Связаться с командой</a>
-        <a href="https://t.me/vietochka" target="_blank">Связаться с автором</a>
+        <a href="order.html">Заказать букет</a>
+        <a href="https://t.me/vietochka" target="_blank">Написать нам</a>
     </nav>
 </header>
 
 <main>
     <section class="form-container">
-        <h2>Прповерка на положительность, отрицательность, равенство нулю</h2>
+        <h2>Проверка на положительность, отрицательность, равенство нулю</h2>
         <form id="calculationForm">
 
             <label for="xValue">Введите значение X:</label>
@@ -96,27 +95,24 @@
 </footer>
 
 <script>
+
+    let res = '';
     function calculate() {
         let x = parseFloat(document.getElementById('xValue').value);
-        let res = '';
         if (x === 0) {
             alert("X = 0");
             res = 'X равен нулю!';
-            //return;
         }
         else if (x > 0) {
             alert("X - положительное число!");
             res = 'X - положительное число!';
-            //return;
         }
         else if (x < 0) {
             res = 'X - отрицательное число!';
             alert(res);
-            //return;
         }
         else if (isNaN(x)) {
             alert("Ошибка: Введите корректное вещественное число X!");
-            //return;
         }
 
         document.getElementById('result').innerText = `Результат: ${res}`;
@@ -129,9 +125,11 @@
             alert("Ошибка: Введите корректное вещественное число X!");
             return;
         }
-
-        let query = `https://www.bing.com/search?q=Задача: X=${x} положительно, отрицательно, либо нуль. Результат: ${res}`;
-        window.open(query, '_blank');
+        if (res != '')
+        {
+            let query = `https://www.google.com/search?q=Задача: X=${x} положительно, отрицательно, либо нуль. Результат: ${res}`;
+            window.open(query, '_blank');
+        }
     }
 
     function clearFields() {

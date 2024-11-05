@@ -13,6 +13,12 @@
             background-position: center;
             color: #6e48d6;
         }
+        table{
+            background-image: url('images/table_bg.jpg');
+            backdrop-filter: blur(8px);
+            background-position: center;
+            color: white;
+        }
         header, nav, footer {
             text-align: center;
             margin-bottom: 20px;
@@ -36,12 +42,12 @@
             font-size: 1.2em;
             line-height: 1.6;
         }
-        .thumbnail {
+        .miniature {
             width: 100px;
             height: auto;
             cursor: pointer;
         }
-        .cat-section {
+        .flower-section {
             text-align: center;
             margin-top: 50px;
         }
@@ -63,17 +69,53 @@
             text-decoration: none;
             font-size: 1.2em;
         }
-        .button-album-of-the-day {
-            display: block;
-            margin: 20px auto;
-            padding: 10px 20px;
-            background-color: #4a0cf4;
-            color: white;
-            text-align: center;
+
+        .bouquet-section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+        .bouquet-card {
+            background-color: rgba(138, 143, 136, 0.6);
             border-radius: 10px;
-            text-decoration: none;
-            font-size: 1.2em;
-            width: fit-content;
+            padding: 20px;
+            width: 250px;
+            margin: 20px;
+            text-align: center;
+        }
+        .bouquet-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        .bouquet-card h3 {
+            margin-top: 10px;
+            font-size: 1.5em;
+            color: white;
+        }
+        .bouquet-card p {
+            font-size: 1em;
+            color: white;
+            text-align: start;
+        }
+        .bouquet-caption {
+            font-size: 0.8em;
+            font-style: italic;
+            color: #cccccc;
+            margin-top: 5px;
+        }
+        
+        .bouquet-li {
+            text-align: left;
+            font-style: italic;
+            color: #ffffff;
+            margin-top: 5px;
+        }
+        ol ol{
+            list-style-type: lower-alpha;
+        }
+
     </style>
 </head>
 <body>
@@ -82,13 +124,12 @@
     <h1>Incredible Flowers</h1>
     <nav>
         <a href="index.html" class="active">Главная</a>
-        <a href="albums.html">Букеты</a>
-        <a href="genres.html">Цветы</a>
+        <a href="#bouquets">Букеты</a>
+        <a href="#flowers">Цветы</a>
         <a href="task.html">Задача</a>
         <a href="passport.html">Паспорт</a>
-        <a href="contacts.html">Предложить букет</a>
-        <a href="team_contact.html">Связаться с командой</a>
-        <a href="https://t.me/vietochka" target="_blank">Связаться с автором</a>
+        <a href="order.html">Заказать букет</a>
+        <a href="https://t.me/vietochka" target="_blank">Написать нам</a>
     </nav>
 </header>
 
@@ -103,20 +144,136 @@
 
     <h3>Навигация по сайту</h3>
     <p>Incredible Flowers имеет удобную и интуитивно понятную навигацию, которая позволит вам с лёгкостью подобрать подходящий букет. Вот что вы можете найти на нашем сайте:</p>
-    <ul>
-        <li><strong>Букеты:</strong> Страница, где собраны различные букетные композиции с описаниями и подробной информацией.</li>
-        <li><strong>Цветы:</strong> Раздел, который поможет вам ориентироваться в многообразии флоры и выбрать то, что вам по душе.</li>
-        <li><strong>Контакты:</strong> Если у вас возникли вопросы, вы можете легко связаться с нами через страницу контактов.</li>
-    </ul>
-    <a href="albums.html#album-of-the-day" class="button-album-of-the-day">К букету дня</a>
+
+    <strong>
+        <a href="#bouquets">Букеты:</a>
+    </strong>
+     Страница, где собраны различные букетные композиции с описаниями и подробной информацией.
+
+    <br>
+
+    <strong>
+        <a href="#flowers">Цветы:</a>
+    </strong> 
+    Раздел, который поможет вам ориентироваться в многообразии флоры и выбрать то, что вам по душе.
+
 </section>
 
-<section class="cat-section">
-    <h3>Картинка цветочка</h3>
-    <a href="images/flower.jpg" target="_blank">
-        <img src="images/flower.jpg" alt="Миниатюра цветочка" class="thumbnail">
+<section class="flower-section">
+    <h3>Вам букетик</h3>
+    <a href="images/flowers/flower_main.jpg" target="_blank">
+        <img src="images/flowers/flower_main.jpg" alt="Миниатюра цветочка" class="miniature">
     </a>
 </section>
+
+
+<section class="flower-section">
+    <h2><a id="bouquets">Букеты</a></h2>
+</section>
+
+
+
+<section class="bouquet-section">
+    <div class="bouquet-card">
+        
+        <a href="https://track24.ru/google/?q=%D0%BA%D1%83%D0%BF%D0%B8%D1%82%D1%8C%20%D0%B1%D1%83%D0%BA%D0%B5%D1%82">
+            <img src="images/bouquets/bouquet1.jpg" alt="bouquet1">
+        </a>
+        <h3>Осенний</h3>
+        <p>
+            <ul class="bouquet-li">
+                <li >Маттиола</li>
+                <li>Роза</li>
+                <li>Ромашка</li>
+            </ul>
+        </p>
+    </div>
+
+    <div class="bouquet-card">
+        
+        <a href="https://track24.ru/google/?q=%D0%BA%D1%83%D0%BF%D0%B8%D1%82%D1%8C%20%D0%B1%D1%83%D0%BA%D0%B5%D1%82">
+            <img src="images/bouquets/bouquet2.jpg" alt="bouquet2">
+        </a>
+        <h3>Зимний</h3>
+        <p>
+            <ul class="bouquet-li">
+                <li>Альстромерия</li>
+                <li>Роза</li>
+                <li>Дельфиниум</li>
+            </ul>
+        </p>
+    </div>
+
+    <div class="bouquet-card">
+        <a href="https://track24.ru/google/?q=%D0%BA%D1%83%D0%BF%D0%B8%D1%82%D1%8C%20%D0%B1%D1%83%D0%BA%D0%B5%D1%82">
+            <img src="images/bouquets/bouquet3.jpg" alt="bouquet3">
+        </a>
+        <h3>Весенний</h3>
+        <p>
+            <ul class="bouquet-li">
+                <li>Роза пионовидная</li>
+                <li>Эвкалипт</li>
+            </ul>
+        </p>
+    </div>
+</section>
+
+
+
+<section class="flower-section">
+    <h2><a id="flowers">Цветы</a></h2>
+</section>
+
+<table class="table" align="center" cellspacing="0" cellpadding="10" border="1" width="1000px" background="images/table_bg.JPG">
+    
+
+    <tr>
+        <td height="200px" width="200px" >
+            <img src="images/flowers/flower1.JPG" title="Роза" width="200">
+        </td> 
+        <td>
+            <h3><a href="https://ru.wikipedia.org/wiki/%D0%A0%D0%BE%D0%B7%D0%B0"  target="_blank" >Роза</a></h3>            
+            <ol>
+                <li>С древних времен роза была известна как главный символ любви.</li>
+                <li>Существует более 100 видов роз.</li>
+                <li> Розы не только красивые, но и имеют практическое применение. Они используются в кулинарии, парфюмерии, а также в лечебных целях.</li>
+            </ol>
+        </td>
+    </tr>
+    <tr>
+        <td height="200px" width="200px" >
+            <img src="images/flowers/flower2.JPG" title="Альстромерия" width="200">
+        </td> 
+        <td>
+            <h3><a href="https://ru.wikipedia.org/wiki/%D0%90%D0%BB%D1%8C%D1%81%D1%82%D1%80%D1%91%D0%BC%D0%B5%D1%80%D0%B8%D1%8F"  target="_blank" >Альстромерия</a></h3>
+            <ol>
+                <li>Не имеют запаха. Это свойство можно учесть, когда даришь букет людям с аллергией.</li>
+                <li>Альстромерии – очень стойкие цветы. Они могут простоять в вазе 2-3 недели.</li>
+                <li>Символизм в цвете бутона:
+                    <ol>
+                        <li>Белые олицетворяют близость, единомыслие и искренность.</li>
+                        <li>Желтые дарят с пожеланиями успеха.</li>
+                        <li> Розовые символизируют нежное отношение, романтику.</li>
+                    </ol>
+                </li>
+            </ol>
+        </td>
+    </tr>
+    <tr>
+        <td height="200px"  width="200px" >
+            <img src="images/flowers/flower3.JPG" title="Пион" width="200">
+        </td> 
+        <td> 
+            <h3><a href="https://ru.wikipedia.org/wiki/%D0%9F%D0%B8%D0%BE%D0%BD"  target="_blank" >Пион</a></h3>
+            <ol>
+                <li>В природе встречаются пионы практически всех цветов радуги. </li>
+                <li>Самым ярким и насыщенным ароматом обладают пионы розового цвета.</li>
+                <li>Белые и розовые пионы — символ счастливого брака и удачи.</li>
+            </ol>
+        </td>
+    </tr>
+</table>
+
 
 <a href="#top" class="back-to-top">К началу</a>
 

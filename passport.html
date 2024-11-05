@@ -82,6 +82,17 @@
             cursor: pointer;
             font-size: 1.2em;
         }
+        .to-dom {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            background-color: #4a0cf4;
+            color: white;
+            text-align: center;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 1.2em;
+        }
     </style>
 </head>
 <body>
@@ -90,13 +101,12 @@
     <h1>Изменяем кириллицу на латиницу по клику</h1>
     <nav>
         <a href="index.html">Главная</a>
-        <a href="albums.html">Букеты</a>
-        <a href="genres.html">Цветы</a>
+        <a href="index.html#bouquets">Букеты</a>
+        <a href="index.html#flowers">Цветы</a>
         <a href="task.html">Задача</a>
         <a href="passport.html" class="active">Паспорт</a>
-        <a href="contacts.html">Предложить букет</a>
-        <a href="team_contact.html">Связаться с командой</a>
-        <a href="https://t.me/vietochka" target="_blank">Связаться с автором</a>
+        <a href="order.html">Заказать букет</a>
+        <a href="https://t.me/vietochka" target="_blank">Написать нам</a>
     </nav>
 </header>
 
@@ -118,6 +128,10 @@
     <div class="button-container">
         <button id="translateButton">Изменить язык</button>
     </div>
+    
+    
+    <a href="passDom.html" class="to-dom"> Информация из DOM</a>
+
 </main>
 
 <footer>
