@@ -72,15 +72,16 @@
     <section class="form-container">
         <h2>Форма для заказа букета</h2>
         <form  id="orderForm" action="https://www.google.com/search?" name="orderForm" target="_blank">
+            <input type="hidden"  name="q" value="search">
             
             <label for="username">Ваше прекрасное имя:</label>
-            <input type="text" id="username" name="username"><br><br>
+            <input type="text" id="username" name="username" value="Светлана" ><br><br>
 
-            <label for="surname">Ваша не очень прекрасная фамилия:</label>
-            <input type="text" id="surname" name="surname"><br><br>
+            <label for="surname">Ваша прекрасная фамилия:</label>
+            <input type="text" id="surname" name="surname" value="Ноздрачёва"><br><br>
 
             <label for="year">Ваш год рождения:</label>
-            <input type="number" id="year" name="year" min="1750" max="2023"><br><br>
+            <input type="number" id="year" name="year" min="1950" max="2023" value="2004"><br><br>
 
             <label for="city_select">Выберите город:</label>
             <select id="city_select" name="city">
@@ -107,7 +108,10 @@
             <br><br>
 
             <label for="password">Промокодик?</label>
-            <input type="password" id="password" name="password"><br><br>
+            <input type="password" id="password" name="password" value="12345"><br><br>
+
+            <label for="comments">Комментарии к заказу:</label>
+            <TEXTAREA cols=80 rows=4 name="textarea" >Для заметок</TEXTAREA><br>
 
             <input type="hidden" name="form_type" value="order_hidden">
 
