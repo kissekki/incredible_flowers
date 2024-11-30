@@ -3,66 +3,66 @@
       "id": "1",
       "title": "Тюльпан",
       "price": 120,
-      "img": "images/flowerscollect/tulip.jpg"
+      "img": "images/flowers_collect/tulip.jpg"
     },
     {
       "id": "2",
       "title": "Роза",
       "price": 150,
-      "img": "images/flowerscollect/rose.jpg"
+      "img": "images/flowers_collect/rose.jpg"
     },
     {
       "id": "3",
       "title": "Ранункулюс",
       "price": 449,
-      "img": "images/flowerscollect/ranunculus.jpg"
+      "img": "images/flowers_collect/ranunculus.jpg"
     },
     {
       "id": "4",
       "title": "Протея",
       "price": 1250,
-      "img": "images/flowerscollect/protea.jpg"
+      "img": "images/flowers_collect/protea.jpg"
     },
     {
       "id": "5",
       "title": "Мак",
       "price": 100,
-      "img": "images/flowerscollect/poppy.jpg"
+      "img": "images/flowers_collect/poppy.jpg"
     },
     {
       "id": "6",
       "title": "Пион",
       "price": 500,
-      "img": "images/flowerscollect/peony.jpg"
+      "img": "images/flowers_collect/peony.jpg"
     },
     {
       "id": "7",
       "title": "Лилия",
       "price": 320,
-      "img": "images/flowerscollect/lily.jpg"
+      "img": "images/flowers_collect/lily.jpg"
     },
     {
       "id": "8",
       "title": "Ирис",
       "price": 230,
-      "img": "images/flowerscollect/iris.jpg"
+      "img": "images/flowers_collect/iris.jpg"
     },
     {
       "id": "9",
       "title": "Гипсофила",
       "price": 159,
-      "img": "images/flowerscollect/gypsophila.jpg"
+      "img": "images/flowers_collect/gypsophila.jpg"
     },
     {
       "id": "10",
       "title": "Ромашка",
       "price": 120,
-      "img": "images/flowerscollect/daisy.jpg"
+      "img": "images/flowers_collect/daisy.jpg"
     },
     {
       "id": "11",
       "title": "Брассика",
       "price": 249,
-      "img": "images/flowerscollect/cabbage.jpg"
+      "img": "images/flowers_collect/cabbage.jpg"
     }
   ]
