@@ -35,9 +35,9 @@ async function getResponce() {
     console.log(responce)
     let content = await responce.json()
     console.log(content)
-    content = JSON.parse(content)
+    //content = JSON.parse(content)
     content = content.splice(0, 11)
-    //content.sort()
+    content.sort()
     console.log(content)
     let key
 
@@ -82,9 +82,9 @@ async function getResponce1() {
     console.log(responce)
     let content = await responce.json()
     console.log(content)
-    content = JSON.parse(content)
+    //content = JSON.parse(content)
     content = content.splice(0, 11)
-    //content.sort()
+    content.sort()
     console.log(content)
     let key
     /*for (key in content) {
