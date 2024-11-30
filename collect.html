@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Incredible Flowers - Главная</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('images/background.jpg');
+            background-size: cover;
+            backdrop-filter: blur(8px);
+            background-position: center;
+            color: #6e48d6;
+        }
+        header, nav, footer {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #4a0cf4;
+        }
+        nav a.active {
+            font-weight: bold;
+        }
+        .content {
+            padding: 20px;
+            text-align: center;
+        }
+        .content h2 {
+            font-size: 2em;
+        }
+        .content p {
+            font-size: 1.2em;
+            line-height: 1.6;
+        }
+        .flower-section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+        .flower-card {
+            background-color: rgba(138, 143, 136, 0.6);
+            border-radius: 10px;
+            padding: 20px;
+            width: 250px;
+            margin: 20px;
+            text-align: center;
+        }
+        .flower-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        .flower-card h3 {
+            margin-top: 10px;
+            font-size: 1.5em;
+            color: white;
+        }
+        .flower-card p {
+            font-size: 1em;
+            color: white;
+            text-align: start;
+        }
+        .flower-caption {
+            font-size: 0.8em;
+            font-style: italic;
+            color: #cccccc;
+            margin-top: 5px;
+        }
+        .flower-li {
+            text-align: left;
+            font-style: italic;
+            color: #ffffff;
+            margin-top: 5px;
+        }
+
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Incredible Flowers</h1>
+    <nav>
+        <a href="index.html">Главная</a>
+        <a href="#bouquets">Букеты</a>
+        <a href="#flowers">Цветы</a>
+        <a href="order.html">Заказать букет</a>
+        <a href="collect.html" class="active">Собрать букет</a>
+        <a href="https://t.me/vietochka" target="_blank">Написать нам</a>
+    </nav>
+</header>
+
+
+<section class="flower-section">
+    <div class="flower-card">
+        
+        <a href="https://track24.ru/google/?q=%D0%BA%D1%83%D0%BF%D0%B8%D1%82%D1%8C%20%D0%B1%D1%83%D0%BA%D0%B5%D1%82">
+            <img src="images/bouquets/bouquet1.jpg" alt="bouquet1">
+        </a>
+        <h3>Осенний</h3>
+        <p>
+            <ul class="flower-li">
+                <li >Маттиола</li>
+                <li>Роза</li>
+                <li>Ромашка</li>
+            </ul>
+        </p>
+    </div>
+
+    <div class="flower-card">
+        
+        <a href="https://track24.ru/google/?q=%D0%BA%D1%83%D0%BF%D0%B8%D1%82%D1%8C%20%D0%B1%D1%83%D0%BA%D0%B5%D1%82">
+            <img src="images/bouquets/bouquet2.jpg" alt="flower2">
+        </a>
+        <h3>Зимний</h3>
+        <p>
+            <ul class="flower-li">
+                <li>Альстромерия</li>
+                <li>Роза</li>
+                <li>Дельфиниум</li>
+            </ul>
+        </p>
+    </div>
+
+    <div class="flower-card">
+        <a href="https://track24.ru/google/?q=%D0%BA%D1%83%D0%BF%D0%B8%D1%82%D1%8C%20%D0%B1%D1%83%D0%BA%D0%B5%D1%82">
+            <img src="images/bouquets/bouquet3.jpg" alt="flower3">
+        </a>
+        <h3>Весенний</h3>
+        <p>
+            <ul class="flower-li">
+                <li>Роза пионовидная</li>
+                <li>Эвкалипт</li>
+            </ul>
+        </p>
+    </div>
+</section>
+
+
+
+<div class="container">
+      <!--начало уникального содержания страницы-->
+       <div class="card-body">
+           <h5 class='card-title text-center'>Магазин</h5>
+            <input type="radio" id="price" name="sort"  onchange="sort()"> price  </input>
+            <input type="radio" id="title" name="sort"  checked onchange="sort()" > title </input>
+            <input type="text" id="search" name="search"  onchange="search()"> поиск  </input>
+            <form action="https://www.bing.com/search?" id="UserEnter" name="UserEnter" target="_blank">
+               <input name="q" type="hidden" value="search">
+               <ul class="d-flex flex-row justify-content-around flex-wrap bg-light" id="node_for_insert">
+
+               <!--начало генерируемого фрагмента кода -->
+                </ul>
+                <input class="btn btn-primary" type="Submit" value="В корзину">
+            </form>
+       </div>
+       <!--окончание уникального содержания страницы-->
+
+   
+</div>
+
+
+
+<footer>
+    <p>&copy; 2024 Incredible Flowers</p>
+</footer>
+
+<script src="./search.js"></script>
+
+</body>
+</html>
