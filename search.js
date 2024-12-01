@@ -119,7 +119,7 @@ async function getResponce1() {
 
     //node_for_insert.innerHTML='';
     let node_for_insert = document.getElementById("node_for_insert")
-    node_for_insert.innerHTML += `<section class="bouquet-section">`
+    node_for_insert.innerHTML += `<section class="flower-section">`
     for (key in content_filter) {
                 node_for_insert.innerHTML += `
                 <div class="flower-card">

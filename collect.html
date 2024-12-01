@@ -77,6 +77,9 @@
             color: #ffffff;
             margin-top: 5px;
         }
+        .flowers{
+            display:inline;
+        }
 
     </style>
 </head>
@@ -98,7 +101,6 @@
 
 
 <div class="container">
-      <!--начало уникального содержания страницы-->
        <div class="card-body">
            <h5 class='card-title text-center'>Магазин</h5>
             <input type="radio" id="price" name="sort"  onchange="sort()"> price  </input>
@@ -106,14 +108,12 @@
             <input type="text" id="search" name="search"  onchange="search()"> поиск  </input>
             <form action="https://www.google.com/search?" id="UserEnter" name="UserEnter" target="_blank">
                <input name="q" type="hidden" value="search">
-               <ul class="d-flex flex-row justify-content-around flex-wrap bg-light" id="node_for_insert">
-
-               <!--начало генерируемого фрагмента кода -->
+               <ul class="flowers" id="node_for_insert">
+                
                 </ul>
                 <input class="btn btn-primary" type="Submit" value="В корзину">
             </form>
        </div>
-       <!--окончание уникального содержания страницы-->
 
    
 </div>
