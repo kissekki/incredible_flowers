@@ -56,17 +56,17 @@ async function getResponce() {
     console.log(content_filter);
 
     let node_for_insert = document.getElementById("node_for_insert")
-    //node_for_insert.innerHTML='';
+    node_for_insert.innerHTML += `<section class="bouquet-section">`
     for (key in content_filter) {
                 node_for_insert.innerHTML += `
                 <div class="flower-card">
-                    <img  style="width: 260px" class="align-self-center" src=${content_filter[key].img}>
+                    <img style="width: 260px" class="align-self-center" src=${content_filter[key].img}>
                     <h3 class="flower-caption">${content_filter[key].title}</h3>
                     <p>Цена ${content_filter[key].price} р.</p>
                     <p>Добавить <input class="w-25" type="text" value="0" name="check"></p>           
                 </div>        `
             }
-
+    node_for_insert.innerHTML += `</section>`
 }
 async function getResponce1() {
     
@@ -119,16 +119,17 @@ async function getResponce1() {
 
     //node_for_insert.innerHTML='';
     let node_for_insert = document.getElementById("node_for_insert")
+    node_for_insert.innerHTML += `<section class="bouquet-section">`
     for (key in content_filter) {
                 node_for_insert.innerHTML += `
                 <div class="flower-card">
-                    <img  style="width: 260px" class="align-self-center" src=${content_filter[key].img}>
+                    <img style="width: 260px" class="align-self-center" src=${content_filter[key].img}>
                     <h3 class="flower-caption">${content_filter[key].title}</h3>
                     <p>Цена ${content_filter[key].price} р.</p>
                     <p>Добавить <input class="w-25" type="text" value="0" name="check"></p>           
                 </div>        `
             }
-
+    node_for_insert.innerHTML += `</section>`
     
 
 }
