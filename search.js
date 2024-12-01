@@ -60,12 +60,10 @@ async function getResponce() {
     for (key in content_filter) {
                 node_for_insert.innerHTML += `
                 <div class="flower-card">
-                    <li style="width: 260px" class="d-flex flex-column m-1 p-1 border bg-body">
-                    <img style="width: 260px" class="align-self-center" src=${content_filter[key].img}>
+                    <img  style="width: 260px" class="align-self-center" src=${content_filter[key].img}>
                     <h3 class="flower-caption">${content_filter[key].title}</h3>
                     <p>Цена ${content_filter[key].price} р.</p>
-                    <p>Добавить <input class="w-25" type="text" value="0" name="check"></p>
-                    </li>
+                    <p>Добавить <input class="w-25" type="text" value="0" name="check"></p>           
                 </div>        `
             }
 
@@ -124,14 +122,14 @@ async function getResponce1() {
     for (key in content_filter) {
                 node_for_insert.innerHTML += `
                 <div class="flower-card">
-                    <li style="width: 260px" class="d-flex flex-column m-1 p-1 border bg-body">
-                    <img style="width: 260px" class="align-self-center" src=${content_filter[key].img}>
+                    <img  style="width: 260px" class="align-self-center" src=${content_filter[key].img}>
                     <h3 class="flower-caption">${content_filter[key].title}</h3>
                     <p>Цена ${content_filter[key].price} р.</p>
-                    <p>Добавить <input class="w-25" type="text" value="0" name="check"></p>
-                    </li>
+                    <p>Добавить <input class="w-25" type="text" value="0" name="check"></p>           
                 </div>        `
             }
+
+    
 
 }
 
