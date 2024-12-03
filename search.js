@@ -56,7 +56,6 @@ async function getResponce() {
     console.log(content_filter);
 
     let node_for_insert = document.getElementById("node_for_insert")
-    node_for_insert.innerHTML += `<section class="bouquet-section">`
     for (key in content_filter) {
                 node_for_insert.innerHTML += `
                 <li>
@@ -69,7 +68,6 @@ async function getResponce() {
                 <li>`
                 
             }
-    node_for_insert.innerHTML += `</section>`
 }
 async function getResponce1() {
     
@@ -122,7 +120,6 @@ async function getResponce1() {
 
     //node_for_insert.innerHTML='';
     let node_for_insert = document.getElementById("node_for_insert")
-    node_for_insert.innerHTML += `<section class="flower-section">`
     for (key in content_filter) {
                 node_for_insert.innerHTML += `
                 <li>
@@ -134,7 +131,6 @@ async function getResponce1() {
                     </div>
                 <li>`
             }
-    node_for_insert.innerHTML += `</section>`
     
 
 }
