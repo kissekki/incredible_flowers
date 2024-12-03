@@ -67,7 +67,7 @@ async function getResponce() {
                         <p>Добавить <input class="w-25" type="text" value="0" name="check"></p>           
                     </div>
                 </div>
-                <li>`
+                </li>`
                 
             }
 }
