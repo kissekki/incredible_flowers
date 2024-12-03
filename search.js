@@ -59,12 +59,14 @@ async function getResponce() {
     for (key in content_filter) {
                 node_for_insert.innerHTML += `
                 <li>
+                <div class="container">
                     <div class="flower-card">
                         <img style="width: 260px" class="align-self-center" src=${content_filter[key].img}>
                         <h3 class="flower-caption">${content_filter[key].title}</h3>
                         <p>Цена ${content_filter[key].price} р.</p>
                         <p>Добавить <input class="w-25" type="text" value="0" name="check"></p>           
                     </div>
+                </div>
                 <li>`
                 
             }
