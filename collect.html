@@ -49,6 +49,9 @@
             width: 320px;
             margin: 20px;
             text-align: center;
+            position: relative;
+            display: flex;
+            flex-direction: column;
         }
         .flower-card img {
             width: 100%;
@@ -79,6 +82,7 @@
         }
         .flowers{
             display:inline;
+            
         }
 
     </style>
@@ -101,14 +105,14 @@
 
 
 <div class="container">
-       <div class="card-body">
+       <div class="flowers-body">
            <h5 class='card-title text-center'>Магазин</h5>
             <input type="radio" id="price" name="sort"  onchange="sort()"> price  </input>
             <input type="radio" id="title" name="sort"  checked onchange="sort()" > title </input>
             <input type="text" id="search" name="search"  onchange="search()"> поиск  </input>
             <form action="https://www.google.com/search?" id="UserEnter" name="UserEnter" target="_blank">
                <input name="q" type="hidden" value="search">
-               <ul class="flowers" id="node_for_insert">
+               <ul class="d-flex flex-row justify-content-around flex-wrap bg-light" id="node_for_insert">
                 
                 </ul>
                 <input class="btn btn-primary" type="Submit" value="В корзину">
